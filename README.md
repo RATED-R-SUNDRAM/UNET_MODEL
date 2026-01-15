@@ -6,14 +6,6 @@
 
 This project implements a **U-Net architecture** for semantic image segmentation, specifically designed for the Carvana Image Masking Challenge. The model performs pixel-level binary segmentation to identify and mask vehicles from high-resolution images.
 
-### Key Features
-- ✨ **Lightweight U-Net Architecture** with 3 encoder-decoder blocks
-- 🚀 **GPU Accelerated Training** using PyTorch CUDA support
-- 📦 **Multi-Format Model Export** (PyTorch, TorchJIT, ONNX)
-- 🎯 **Binary Segmentation** with Sigmoid activation
-- 📊 **Production-Ready** model serving capabilities
-
----
 
 ## 🏗️ Architecture
 
@@ -259,31 +251,4 @@ class CarvanaDataset(Dataset):
 - `onnxruntime` - ONNX inference engine
 
 ---
-
-## 🎯 Use Cases
-
-✅ Autonomous vehicle perception systems  
-✅ Image segmentation tasks  
-✅ Medical imaging applications  
-✅ Object boundary detection  
-✅ Real-time video processing  
-
----
-
-## 📝 Notes
-
-- Model expects grayscale input images
-- All images are normalized to [0, 1] range
-- Binary threshold set at 0.5 for mask generation
-- GPU recommended for training; CPU for inference on edge devices
-
----
-
-## 📄 License
-
-This project is part of the Carvana Image Masking Challenge dataset.
-
----
-
-**Last Updated**: January 2026 | **Model Version**: 1.0 | **Status**: Production Ready ✅
 
